@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Purchase Predictor | EV Hub</title>
+    <link rel="stylesheet" href="predictor.css">
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="HTMLPage2.html">EV Hub</a>
+        <nav>
+            <a href="HTMLPage2.html">Home</a>
+            <a href="HTMLPage2.html#browse">Browse EVs</a>
+            <a class="active" href="predictor.html">AI Predictor</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Make your next move an informed one.</h1>
+            <p>Tell us about your budget, daily commute, and charging access to see a sample EV match.</p>
+        </section>
+
+        <div class="layout">
+
+            <!-- Form -->
+            <section class="card">
+                <h2>Tell us about yourself</h2>
+
+                <form action="#result" method="get">
+                    <label for="income">Monthly income (PKR)</label>
+                    <input id="income" name="income" type="number" min="0" step="1000" placeholder="150000" required>
+
+                    <label for="budget">Your EV budget</label>
+                    <select id="budget" name="budget" required>
+                        <option value="">Choose a budget range</option>
+                        <option value="under-1m">Under PKR 1 million</option>
+                        <option value="1-3m">PKR 1–3 million</option>
+                        <option value="3-6m">PKR 3–6 million</option>
+                        <option value="6-10m">PKR 6–10 million</option>
+                        <option value="over-10m">Over PKR 10 million</option>
+                    </select>
+
+                    <label for="distance">Daily travel distance (km)</label>
+                    <input id="distance" name="distance" type="number" min="0" max="1000" placeholder="35" required>
+
+                    <label for="city">Your city</label>
+                    <select id="city" name="city" required>
+                        <option value="">Select your city</option>
+                        <option>Islamabad</option>
+                        <option>Rawalpindi</option>
+                        <option>Lahore</option>
+                        <option>Karachi</option>
+                        <option>Multan</option>
+                        <option>Peshawar</option>
+                        <option>Abbottabad</option>
+                        <option>Other</option>
+                    </select>
+
+                    <p>Can you charge an EV at home?</p>
+                    <label class="choice"><input type="radio" name="charging" value="yes" required> Yes, I can</label>
+                    <label class="choice"><input type="radio" name="charging" value="no"> Not yet</label>
+
+                    <button type="submit">Explore my EV match</button>
+                </form>
+            </section>
+
+            <!-- Result -->
+            <section class="card" id="result">
+                <h2>Your EV outlook</h2>
+
+                <div class="score">78%</div>
+                <p class="small">Sample match score. This is an example, not a calculated result.</p>
+
+                <h3>Vehicles to explore</h3>
+
+                <div class="car">
+                    <img src="images/BYD.jpg" alt="BYD Electric Car">
+                    <div>
+                        <strong>BYD</strong>
+                        <p class="small">Electric Sedan · 420 km · $35,000</p>
+                    </div>
+                </div>
+
+                <div class="car">
+                    <img src="images/tesla.jpg" alt="Tesla Electric Car">
+                    <div>
+                        <strong>Tesla</strong>
+                        <p class="small">Electric SUV · 500 km · $42,000</p>
+                    </div>
+                </div>
+
+                <h3>Running cost concept</h3>
+
+                <p class="small">Petrol vehicle (higher)</p>
+                <div class="bar"><div class="petrol"></div></div>
+
+                <p class="small">Electric vehicle (lower)</p>
+                <div class="bar"><div class="ev"></div></div>
+
+                <p class="small">Demo note: the results above are static examples.</p>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 EV Hub · Web Application Development Project</p>
+    </footer>
+
+</body>
+
+</html>

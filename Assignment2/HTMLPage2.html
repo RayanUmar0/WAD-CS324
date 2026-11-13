@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="StyleSheet2.css" />
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="#">EV Hub</a>
+
+        <nav class="main-nav">
+            <a href="HTMLPage2.html">Home</a>
+            <a href="browse.html" target="_blank" >Browse EVs</a>
+            <a href="predictor.html">AI Predictor</a>
+            <a href="#about">About</a>
+            <a href="#login" class="login-link">Login / Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main1-hero" id="home">
+            <div class="main1-hero-text">
+                <h1>Find the Electric Vehicle That Fits Your Life</h1>
+                <p>Browse EVs, compare their specifications, and find a vehicle that suits your needs and budget.</p>
+
+                <a class="button button-primary" href="#browse">Browse EVs</a>
+                <a class="button button-secondary" href="#predictor">Try AI Predictor</a>
+            </div>
+
+            <div class="main1-hero-image">
+                <img src="images/deepal.jpg" alt="Deepal Electric Car">
+                <p>Drive Electric. Drive Smarter.</p>
+            </div>
+        </section>
+
+        <section class="search-panel" id="browse">
+            <h2>Find Your EV</h2>
+            <form action="HTMLPage2.html" method="get">
+                <label for="brand">Brand</label>
+                <select id="brand" name="brand">
+                    <option value="">All brands</option>
+                    <option value="tesla">Tesla</option>
+                    <option value="byd">BYD</option>
+                    <option value="kia">Kia</option>
+                </select>
+
+                <label for="type">Type</label>
+                <select id="type" name="type">
+                    <option value="">All types</option>
+                    <option value="suv">SUV</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="hatchback">Hatchback</option>
+                </select>
+
+                <label for="range">Range</label>
+                <select id="range" name="range">
+                    <option value="">Any range</option>
+                    <option value="500">500+ km</option>
+                    <option value="800">800+ km</option>
+                    <option value="1000">1000+ km</option>
+                </select>
+
+                <button class="button button-primary search-button" type="submit">Search EVs</button>
+            </form>
+        </section>
+
+        <section class="featured" id="featured">
+            <h2>Featured EVs</h2>
+            <p class="section-intro">Explore a few electric vehicles and compare their key details.</p>
+
+            <article class="ev-card">
+                <div class="ev-picture">
+                    <img src="images/BYD.jpg" alt="BYD Electric Car">
+                </div>
+                <h3>BYD</h3>
+                <p class="ev-type">Electric Sedan</p>
+                <ul class="spec-list">
+                    <li><strong>Range:</strong> 420 km</li>
+                    <li><strong>Price:</strong> $35,000</li>
+                </ul>
+                <a class="card-link" href="#compare">View Details</a>
+            </article>
+
+            <article class="ev-card">
+                <div class="ev-picture">
+    <img src="images/tesla.jpg" alt="Tesla Electric Car">
+</div>
+<h3>Tesla</h3>
+                <p class="ev-type">Electric SUV</p>
+                <ul class="spec-list">
+                    <li><strong>Range:</strong> 500 km</li>
+                    <li><strong>Price:</strong> $42,000</li>
+                </ul>
+                <a class="card-link" href="#compare">View Details</a>
+            </article>
+
+            <article class="ev-card">
+                <div class="ev-picture">
+                    <img src="images/Kia.jpg" alt="Kia Electric Car">
+                </div>
+                <h3>Kia</h3>
+                <p class="ev-type">Electric Hatchback</p>
+                <ul class="spec-list">
+                    <li><strong>Range:</strong> 320 km</li>
+                    <li><strong>Price:</strong> $28,000</li>
+                </ul>
+                <a class="card-link" href="#compare">View Details</a>
+            </article>
+        </section>
+
+        <section class="benefits" id="compare">
+            <div class="benefit">
+                <h3>Low Cost</h3>
+                <p>Save money on everyday travel.</p>
+            </div>
+            <div class="benefit">
+                <h3>Cleaner Air</h3>
+                <p>Choose a cleaner way to drive.</p>
+            </div>
+            <div class="benefit">
+                <h3>Easy Charging</h3>
+                <p>Learn about charging options.</p>
+            </div>
+        </section>
+
+        <section class="predictor" id="predictor">
+            <h2>AI Purchase Predictor</h2>
+            <p>Check which electric vehicle may suit your budget and daily travel.</p>
+            <a class="button button-primary" href="#predictor">Try Predictor</a>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="about">
+        <a class="footer-logo" href="#home">EV Hub</a>
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        <p class="copyright">© 2026 EV Hub.</p>
+    </footer>
+</body>
+</html>

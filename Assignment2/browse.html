@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore electric vehicles, compare specifications, and find an EV that fits your lifestyle.">
+    <title>Browse Electric Vehicles | EV Hub</title>
+    <link rel="stylesheet" href="browser.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <a class="logo" href="home.html">EV Hub</a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="HTMLPage1.html">Home</a>
+            <a href="browse.html" aria-current="page">Browse EVs</a>
+            <a href="predictor.html">AI Predictor</a>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <section class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">ELECTRIC MOBILITY, REIMAGINED</p>
+                <h1>Find the EV that<br><span>moves you forward.</span></h1>
+                <p>Compare electric cars, discover everyday efficiency, and make your next drive a smarter one.</p>
+
+
+            </div>
+
+            <div class="ev_image">
+                <!-- <div class="car-symbol" aria-hidden="true">⚡</div>
+                 <p>MOVE CLEANER. THINK BEYOND THE ROAD.</p> -->
+                <img src="images/kia.jpg" alt="EV image">
+        </section>
+
+        <section class="search-panel" id="browse">
+
+            <h2>Browse Electric Vehicles</h2>
+            <p class="section-intro">Choose your priorities. Compare the details that matter.</p>
+
+            <form action="browse.html" method="get">
+                <label for="sort">Sort by</label>
+
+                <select id="sort" name="sort">
+                    <option value="price-low">Price: low to high</option>
+                    <option value="price-high">Price: high to low</option>
+                    <option value="range">Longest range</option>
+                    <option value="name">Name: A to Z</option>
+                </select>
+
+                <button class="button button-apply " type="submit">Apply</button>
+            </form>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Vehicles</h2>
+            <p class="section-intro">Sample vehicle data for demonstration.</p>
+
+            <article class="ev-card">
+                <div class="ev-picture picture-one">
+                    <img src="images/ev_kia1.jpeg" alt="Kia sedan">
+                </div>
+
+                <h3>kia sedan ev E1</h3>
+                <p class="ev-type">Electric car · City favorite</p>
+                <ul class="spec-list">
+                    <li><strong>Price:</strong> PKR 4,200,000</li>
+                    <li><strong>Range:</strong> 280 km</li>
+                    <li><strong>Battery:</strong> 38 kWh</li>
+                    <li><strong>Capacity:</strong> 5 seats</li>
+                </ul>
+                <a class="card-link" href="predictor.html">View details ↗</a>
+            </article>
+
+            <article class="ev-card">
+                <div class="ev-picture picture-one">
+                    <img src="images/BYD.jpg" alt="BYD sedan">
+                </div>
+
+                <h3> BYD seal 4          E2</h3>
+                <p class="ev-type">Electric car · City favorite</p>
+                <ul class="spec-list">
+                    <li><strong>Price:</strong> PKR 6,500,000</li>
+                    <li><strong>Range:</strong> 350 km</li>
+                    <li><strong>Battery:</strong> 40 kWh</li>
+                    <li><strong>Capacity:</strong> 5 seats</li>
+                </ul>
+                <a class="card-link" href="predictor.html">View details ↗</a>
+            </article>
+
+
+            <article class="ev-card">
+                <div class="ev-picture picture-one ">
+                    <img src="images/byd electric and hybrid.jpeg" alt="BYD ">
+                </div>
+
+                <h3> Byd Hybrid and Electric       E3</h3>
+                <p class="ev-type">Electric car · City favorite</p>
+                <ul class="spec-list">
+                    <li><strong>Price:</strong> PKR 3,100,000</li>
+                    <li><strong>Range:</strong> 210 km</li>
+                    <li><strong>Battery:</strong> 30 kWh</li>
+                    <li><strong>Capacity:</strong> 4 seats</li>
+                </ul>
+                <a class="card-link" href="predictor.html">View details ↗</a>
+            </article>
+
+            <article class="ev-card">
+                <div class="ev-picture picture-one ">
+                    <img src="images/etron.jpeg" alt="Audi e-tron">
+                </div>
+
+                <h3>  Audi e-tron      E4</h3>
+                <p class="ev-type">Electric car · City favorite</p>
+                <ul class="spec-list">
+                    <li><strong>Price:</strong> PKR 8,900,000</li>
+                    <li><strong>Range:</strong> 430 km</li>
+                    <li><strong>Battery:</strong> 68 kWh</li>
+                    <li><strong>Capacity:</strong> 5 seats</li>
+                </ul>
+                <a class="card-link" href="predictor.html">View details ↗</a>
+            </article>
+
+            <article class="ev-card">
+                <div class="ev-picture picture-one ">
+                    <img src="images/tesla_modely.jpeg" alt="tesla ">
+                </div>
+
+                <h3>  Tesla Model Y      E5</h3>
+                <p class="ev-type">Electric car · City favorite</p>
+                <ul class="spec-list">
+                    <li><strong>Price:</strong> PKR 10,900,000</li>
+                    <li><strong>Range:</strong> 600 km</li>
+                    <li><strong>Battery:</strong> 90 kWh</li>
+                    <li><strong>Capacity:</strong> 5 seats</li>
+                </ul>
+                <a class="card-link" href="predictor.html">View details ↗</a>
+            </article>
+
+            <article class="ev-card">
+                <div class="ev-picture picture-one ">
+                    <img src="images/tesla_model3.jpeg" alt="Tesla Model 3">
+                </div>
+
+                <h3>  Tesla Model 3      E6</h3>
+                <p class="ev-type">Electric car · City favorite</p>
+                <ul class="spec-list">
+                    <li><strong>Price:</strong> PKR 16,900,000</li>
+                    <li><strong>Range:</strong> 700 km</li>
+                    <li><strong>Battery:</strong> 98 kWh</li>
+                    <li><strong>Capacity:</strong> 5 seats</li>
+                </ul>
+                <a class="card-link" href="predictor.html">View details ↗</a>
+            </article>
+        </section>
+
+        <section class="comparison-panel">
+            <h2>Quick Comparison</h2>
+
+            <div class="table-wrap">
+                <table>
+                    <caption>Specifications of two featured vehicles</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Specification</th>
+                            <th scope="col">City E1</th>
+                            <th scope="col">Urban S</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Price</th>
+                            <td>PKR 4.2M</td>
+                            <td>PKR 5.75M</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Driving range</th>
+                            <td>280 km</td>
+                            <td>360 km</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Battery capacity</th>
+                            <td>38 kWh</td>
+                            <td>52 kWh</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="benefit">
+                <h3>Lower Running Costs</h3>
+                <p>Compare prices and vehicle range before choosing.</p>
+            </div>
+
+            <div class="benefit">
+                <h3>Everyday Efficiency</h3>
+                <p>Explore EV options for your daily travel needs.</p>
+            </div>
+
+            <div class="benefit">
+                <h3>Cleaner Mobility</h3>
+                <p>Learn about electric transport and your options.</p>
+            </div>
+        </section>
+
+        <section class="predictor" id="predictor">
+            <h2>Find Your Perfect EV Match</h2>
+            <p>Share your budget and routine to explore options that may fit your needs.</p>
+            <a class="button button-secondary" href="predictor.html">Try the EV Predictor</a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <a class="footer-logo" href="home.html">EV Hub</a>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+
+        <p class="copyright">© 2026 EV Hub · Web Application Development Project</p>
+    </footer>
+
+</body>
+</html>
